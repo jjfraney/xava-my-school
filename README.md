@@ -80,7 +80,7 @@ uses Hibernate 3.6.x.
 Aside from the obvious (openxava, hibernate, hsqld, logger), here are some archives that
 were carried over from the openxava distributions 's MySchool build
 
-*ox-jdbc-adapters
+* ox-jdbc-adapters
 
 
 ###library exclusions.
@@ -88,23 +88,33 @@ were carried over from the openxava distributions 's MySchool build
 These libraries are not dependencies, neither runtime nor compile time, of MySchool quickstart demo, and
 are excluded from this builid.
 
-*activation:  this is included in java 1.6+ and jee 5+.  http://www.oracle.com/technetwork/java/jaf11-139815.html
-*cglib, asm: as of hibernate 3.5, cglib is replaced by javassist.  The hibernate 4.x transitive dependencies
+* activation:  this is included in java 1.6+ and jee 5+.  http://www.oracle.com/technetwork/java/jaf11-139815.html
+
+* cglib, asm: as of hibernate 3.5, cglib is replaced by javassist.  The hibernate 4.x transitive dependencies
 pulls in javassist.  http://jaxenter.com/hibernate-to-deprecate-cglib-as-bytecode-provider-30595.html
-*autobizlogic, commons-jexl, groovy-all: myschool quick start does not require autobizlogic.
+
+* autobizlogic, commons-jexl, groovy-all: myschool quick start does not require autobizlogic.
 Note, autobizlogic is available on maven repository: http://www.automatedbusinesslogic.com/reference/using-maven
-*jaxb: this is included in java 1.6+.
-*dsn, imap, mailapi, pop3: myschool quick start does not require email support.
+
+* jaxb: this is included in java 1.6+.
+
+* dsn, imap, mailapi, pop3: myschool quick start does not require email support.
 Note: these are bundled in JavaMail from oracle.  JavaMail is included in java 1.6+ and jee.
-*ehcache: myschool quick start does not require ehcache.
-*jakarta-oro:  This apache project was mothballed in 2009.   Which code is dependent on this: apparently, none.
-*poi: openxava generates csv files, not xsl files (see org.openxava.web.servlets.GenerateCustomReportServlet),
+
+* ehcache: myschool quick start does not require ehcache.
+
+* jakarta-oro:  This apache project was mothballed in 2009.   Which code is dependent on this: apparently, none.
+
+* poi: openxava generates csv files, not xsl files (see org.openxava.web.servlets.GenerateCustomReportServlet),
 and does not reference this artifact.
-*commons-validator: myschool quick start does not use the xava validators that depend on this archive.
+
+* commons-validator: myschool quick start does not use the xava validators that depend on this archive.
 Use bean validation because commons-validator has not a release since 2006 (this is 2012).
-*jpa2: Instead of using this java.persistence api library of unknown origin, maven 
+
+* jpa2: Instead of using this java.persistence api library of unknown origin, maven 
 downloads a published versioned library from a known site, for example jboss (home of hibernate).
-*commons-io: used by htmlunit, needed in production?  These are not compile time dependencies
+
+* commons-io: used by htmlunit, needed in production?  These are not compile time dependencies
 and are not brought in by maven.
 
 

@@ -62,7 +62,8 @@ Configuring tomcat
 ------------------
 
 The tomcat in openxava distribution is version 6.0.20 (2008), currently available is 6.0.36.
-If you want to use a fresher version
+If you want to use a fresher version.
+
 1. copy the datasource defininitions from openxava distribution's tomcat/conf/context.xml
 2. copy some jar files from openxava distribution's tomcat/lib: ejb.jar, jta.jar, jasper-jdt.jar
 

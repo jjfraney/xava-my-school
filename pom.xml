@@ -4,9 +4,9 @@
 	<groupId>org.jjflyboy</groupId>
 	<artifactId>my-school</artifactId>
 	<packaging>war</packaging>
-	<version>4.6-SNAPSHOT</version>
+	<version>4.6.1-SNAPSHOT</version>
 	<properties>
-		<openxava.version>4.6</openxava.version>
+		<openxava.version>4.6.1</openxava.version>
 	</properties>
 	<build>
 		<plugins>
